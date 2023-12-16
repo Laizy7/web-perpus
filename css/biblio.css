@@ -1,0 +1,49 @@
+.table-bordered-1 {
+  th,
+  td {
+    border-bottom: 1.5px solid gray;
+  }
+}
+
+.btn-tutup {
+  background-color: #4cb6f3;
+  color: white;
+}
+
+.bRed {
+  border: 1px solid red;
+}
+
+.search-icon-box {
+  border: 1px solid #387df5;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.form-pencarian {
+  border: 1px solid #387df5;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.3rem 0.85rem;
+  /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+}
+
+.btn-cari {
+  background-color: #387df5;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+.tambah-buku-box {
+  background-color: #00b290;
+  color: white;
+  border-radius: 1.5rem;
+  width: 12rem;
+}

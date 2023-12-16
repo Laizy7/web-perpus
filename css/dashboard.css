@@ -1,0 +1,8 @@
+.buku-dipinjam,
+.pengunjung {
+  border: 1px solid #cecece;
+}
+
+.content-image {
+  max-width: 90%;
+}
