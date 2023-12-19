@@ -5,13 +5,26 @@
   }
 }
 
+h1 {
+  font-weight: 600;
+}
+
 .btn-tutup {
+  background-color: #4cb6f3;
+  color: white;
+}
+
+.btn-simpan {
   background-color: #4cb6f3;
   color: white;
 }
 
 .bRed {
   border: 1px solid red;
+}
+
+.bBlue {
+  border: 1px solid blue;
 }
 
 .search-icon-box {
@@ -46,4 +59,42 @@ input[type='text']:focus {
   color: white;
   border-radius: 1.5rem;
   width: 12rem;
+}
+
+.judul-aksi {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
+.sub-judul-aksi {
+  font-size: 2.2vw;
+  font-weight: 600;
+}
+
+label {
+  color: #555555;
+  font-size: 2vw;
+  margin-top: 2vh;
+}
+
+.form-check-label {
+  margin-top: 0;
+}
+
+textarea {
+  min-height: 100px !important;
+}
+
+@media (min-width: 768px) {
+  label {
+    font-size: 1.1vw;
+  }
+
+  .judul-aksi {
+    font-size: 1.7vw;
+  }
+
+  .sub-judul-aksi {
+    font-size: 1.3vw;
+  }
 }

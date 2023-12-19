@@ -186,32 +186,87 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col px-0">
-                <h1 class="h1"><strong>Bibliography</strong></h1>
+                <h1>Bibliography</h1>
               </div>
             </div>
-            <div class="row mt-4">
-              <div class="col fs-4 fw-bold mb-3">
-                Tambah Buku
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                  aria-label="First name"
-                />
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
-                  aria-label="Last name"
-                />
+            <form action="">
+              <div class="row mt-4">
+                <div class="judul-aksi">Tambah Buku</div>
+                <div class="sub-judul-aksi">Informasi Buku</div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="">Judul Buku</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Penerbit</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Kala Terbit</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Tempat Terbit</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Kategori Buku</label>
+                  <select name="" id="" class="form-select">
+                    <option value="">Tes</option>
+                  </select>
+                  <label for="">Bahasa</label>
+                  <input type="text" class="form-control" name="" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="">Pengarang</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">ISBN</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Tahun Terbit</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">No Panggil</label>
+                  <input type="text" class="form-control" name="" />
+                  <label for="">Tipe Buku</label>
+                  <input type="text" class="form-control" name="" />
+                </div>
               </div>
 
-              <div class="text-center">
-                <a href="#" class="btn btn-tutup fw-bold" style="width: 20%">
-                  Tutup
-                </a>
+              <div class="row mt-2">
+                <div class="col">
+                  <div class="sub-judul-aksi">Deskripsi Buku</div>
+                  <label>Sinopsis</label>
+                  <textarea class="form-control" name=""></textarea>
+                  <label for="">Gambar Sampul</label>
+                  <input type="file" class="form-control" name="" />
+                  <label for="">Lampiran Berkas/File</label>
+                  <input type="file" class="form-control" name="" />
+                  <div class="mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label
+                      class="form-check-label text-dark"
+                      for="flexCheckChecked"
+                    >
+                      Ingin menampilkan buku ini di aplikasi perpustakaan
+                    </label>
+                  </div>
+                </div>
               </div>
-            </div>
+
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <a href="" class="d-flex">
+                    <button class="btn btn-dark w-50 mx-auto me-md-0">
+                      Batal
+                    </button>
+                  </a>
+                </div>
+                <div class="col-md-6 mt-3 mt-md-0 text-center text-md-start">
+                  <button type="submit" class="btn btn-simpan w-50">
+                    Simpan
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </main>
         <!-- End Content -->
