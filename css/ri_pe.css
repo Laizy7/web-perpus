@@ -1,11 +1,3 @@
-.bRed {
-  border: 1px solid red;
-}
-
-.bBlue {
-  border: 1px solid blue;
-}
-
 .min-vh-70 {
   min-height: 70vh !important;
 }
