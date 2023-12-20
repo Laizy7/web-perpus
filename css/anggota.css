@@ -55,6 +55,21 @@ input[type='text']:focus {
   width: 5vw;
 }
 
+label {
+  color: #555555;
+  font-size: 2vw;
+  margin-top: 2vh;
+}
+
+.form-check-label {
+  margin-top: 0;
+}
+
+.btn-simpan {
+  background-color: #4cb6f3;
+  color: white;
+}
+
 @media (min-width: 576px) {
   .table-responsive.anggota > table {
     font-size: 1.6vw;
@@ -72,6 +87,10 @@ input[type='text']:focus {
 
   .anggota-action-btn {
     width: 2.6vw;
+  }
+
+  label {
+    font-size: 1.1vw;
   }
 }
 
