@@ -1,12 +1,66 @@
-.table-bordered-1 {
+.min-vh-70 {
+  min-height: 70vh !important;
+}
+
+.bib-form-search {
+  width: 20vw !important;
+  min-width: 18rem !important;
+}
+
+.bib-search-icon-box {
+  border: 1px solid #387df5;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.bib-form-pencarian {
+  border: 1px solid #387df5;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.3rem 0.85rem;
+}
+
+.bib-btn-cari {
+  background-color: #387df5;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.tambah-buku-box {
+  background-color: #00b290;
+  color: white;
+  border-radius: 1.5rem;
+  width: 12rem;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+.table-border-bottom {
   th,
   td {
-    border-bottom: 1.5px solid gray;
+    border-bottom: 1.5px solid gray !important;
   }
 }
 
-h1 {
-  font-weight: 600;
+.biblio-table tr th {
+  font-size: 1.9vw;
+}
+
+.biblio-table tr td {
+  font-size: 1.7vw;
+}
+
+.biblio-table th[scope='tahun-terbit'] {
+  width: 21%;
+}
+
+.biblio-action-btn {
+  width: 4vw;
 }
 
 .btn-tutup {
@@ -17,48 +71,6 @@ h1 {
 .btn-simpan {
   background-color: #4cb6f3;
   color: white;
-}
-
-.bRed {
-  border: 1px solid red;
-}
-
-.bBlue {
-  border: 1px solid blue;
-}
-
-.search-icon-box {
-  border: 1px solid #387df5;
-  border-right: 0;
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.form-pencarian {
-  border: 1px solid #387df5;
-  font-size: 0.875rem;
-  font-weight: 400;
-  padding: 0.3rem 0.85rem;
-  /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
-}
-
-.btn-cari {
-  background-color: #387df5;
-  color: white;
-  border: 1px solid transparent;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-input[type='text']:focus {
-  outline: none;
-}
-
-.tambah-buku-box {
-  background-color: #00b290;
-  color: white;
-  border-radius: 1.5rem;
-  width: 12rem;
 }
 
 .judul-aksi {
@@ -85,7 +97,29 @@ textarea {
   min-height: 100px !important;
 }
 
+@media (min-width: 576px) {
+  .biblio-action-btn {
+    width: 3vw;
+  }
+}
+
 @media (min-width: 768px) {
+  .biblio-table tr th {
+    font-size: 1.5vw;
+  }
+
+  .biblio-table tr td {
+    font-size: 1.3vw;
+  }
+
+  .biblio-table th[scope='tahun-terbit'] {
+    width: 19%;
+  }
+
+  .biblio-action-btn {
+    width: 2.6vw;
+  }
+
   label {
     font-size: 1.1vw;
   }
@@ -96,5 +130,19 @@ textarea {
 
   .sub-judul-aksi {
     font-size: 1.3vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .biblio-table tr th {
+    font-size: 1.3vw;
+  }
+
+  .biblio-table tr td {
+    font-size: 1.1vw;
+  }
+
+  .biblio-action-btn {
+    width: 2.9vw;
   }
 }

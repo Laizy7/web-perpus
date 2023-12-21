@@ -185,72 +185,88 @@
         <main class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col px-0">
-                <h1 class="h1"><strong>Bibliography</strong></h1>
-              </div>
-            </div>
-            <div class="row mt-4">
-              <!-- col-xl-12 col-xxl-12  -->
-              <div class="col fs-4 fw-bold mb-3 d-flex">
-                <form action="" class="d-flex">
-                  <div
-                    class="search-icon-box px-2"
-                    style="width: 15%; height: 31.92px"
+              <h1 class="biblio fw-bold mb-3 px-0">Bibliography</h1>
+
+              <div class="col bg-white min-vh-70 px-0 mb-3 d-flex flex-column">
+                <div class="py-4 mb-3 d-flex shadow-lg px-4">
+                  <form action="" class="d-flex bib-form-search">
+                    <div
+                      class="bib-search-icon-box bg-white h-100 d-flex justify-content-center align-items-center"
+                      style="width: 10%"
+                    >
+                      <img src="img/icons/search.svg" alt="" class="" />
+                    </div>
+                    <input
+                      type="text"
+                      class="bib-form-pencarian"
+                      placeholder="Pencarian data"
+                      style="width: 70%"
+                    />
+                    <button
+                      class="bib-btn-cari"
+                      type="submit"
+                      style="width: 20%"
+                    >
+                      Cari
+                    </button>
+                  </form>
+
+                  <a
+                    href=""
+                    class="tambah-buku-box text-decoration-none ms-auto d-flex justify-content-center align-items-center px-3"
                   >
-                    <img src="img/icons/search.svg" alt="" class="" />
-                  </div>
-                  <input
-                    type="text"
-                    class="form-pencarian"
-                    placeholder="Pencarian data"
-                    style="width: 60%"
-                  />
-                  <button class="btn-cari" type="submit" style="width: 25%">
-                    Cari
-                  </button>
-                </form>
+                    <img src="img/icons/plus.svg" alt="" />
+                    <div class="mx-2 fw-normal">Tambah buku</div>
+                  </a>
+                </div>
 
-                <a
-                  href=""
-                  class="tambah-buku-box text-decoration-none ms-auto d-flex justify-content-center align-items-center px-3"
-                >
-                  <img src="img/icons/plus.svg" alt="" />
-                  <div class="mx-2 fw-normal">Tambah buku</div>
-                </a>
+                <div class="table-responsive px-3 px-sm-4">
+                  <table
+                    class="table biblio-table text-black table-border-bottom"
+                  >
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Pengarang</th>
+                        <th>Penerbit</th>
+                        <th scope="tahun-terbit">Tahun Terbit</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          Pengenalan Dasar-Dasar PLC (Programable Logic
+                          Controler) Disertai Contoh Aplikasinya
+                        </td>
+                        <td>M. Budiyanto</td>
+                        <td>Gava Media</td>
+                        <td>2003-10-21</td>
+                        <td>
+                          <div class="d-md-flex gap-1">
+                            <a href="" class="d-inline-block pb-1 pb-md-0">
+                              <img
+                                src="img/icons/edit.svg"
+                                alt=""
+                                class="biblio-action-btn"
+                              />
+                            </a>
+                            <a href="" class="d-inline-block pt-1 pt-md-0">
+                              <img
+                                src="img/icons/delete.svg"
+                                alt=""
+                                class="biblio-action-btn"
+                              />
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-
-              <table class="table table-light table-bordered-1">
-                <thead>
-                  <tr class="">
-                    <th>No</th>
-                    <th>Judul</th>
-                    <th>Pengarang</th>
-                    <th>Penerbit</th>
-                    <th>Tahun Terbit</th>
-                    <th style="width: 15%"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="">
-                    <td>1</td>
-                    <td>
-                      Pengenalan Dasar-Dasar PLC (Programable Logic Controler)
-                      Disertai Contoh Aplikasinya
-                    </td>
-                    <td>M. Budiyanto</td>
-                    <td>Gava Media</td>
-                    <td>2003-10-21</td>
-                    <td class="">
-                      <a href="">
-                        <img src="img/icons/edit.svg" alt="" />
-                      </a>
-                      <a href="">
-                        <img src="img/icons/delete.svg" alt="" />
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </main>
