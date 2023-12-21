@@ -184,58 +184,69 @@
         <!-- Content -->
         <main class="content">
           <div class="container-fluid">
-            <h1 class="h1 mb-3"><strong>Dashboard</strong></h1>
             <div class="row">
-              <div
-                class="buku-dipinjam col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3 justify-content-between"
-              >
-                <div>
-                  <span class="fw-bold" style="font-size: 45px">54</span> <br />
-                  <span style="font-size: 24px">Buku Dipinjam</span>
-                </div>
-                <div>
-                  <img
-                    src="img/icons/buku-dipinjam-icon.png"
-                    alt="pengunjung"
-                    class="content-image"
-                  />
+              <h1 class="dashboard fw-bold mb-3 px-0">Dashboard</h1>
+
+              <div class="col-12 col-sm-6 order-2 px-0 mt-3 mt-sm-0">
+                <div
+                  class="dashboard-menu-box-2 d-flex justify-content-between py-3 px-4"
+                >
+                  <div>
+                    <span class="fw-bold dashboard-stat-count">64</span>
+                    <br />
+                    <span class="dashboard-stat-text">Buku Dipinjam</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="img/icons/buku-dipinjam-icon.png"
+                      alt="buku-dipinjam"
+                      class="dashboard-stat-image"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div
-                class="pengunjung col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1 justify-content-between"
-              >
-                <div>
-                  <span class="fw-bold" style="font-size: 45px">54</span> <br />
-                  <span style="font-size: 24px">Pengunjung</span>
-                </div>
-                <div>
-                  <img
-                    src="img/icons/pengunjung-icon.png"
-                    alt="pengunjung"
-                    class="content-image"
-                  />
+              <div class="col-12 col-sm-6 order-1 px-0">
+                <div
+                  class="dashboard-menu-box-1 d-flex justify-content-between py-3 px-4"
+                >
+                  <div>
+                    <span class="fw-bold dashboard-stat-count">54</span>
+                    <br />
+                    <span class="dashboard-stat-text">Pengunjung</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="img/icons/pengunjung-icon.png"
+                      alt="pengunjung"
+                      class="dashboard-stat-image"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="row mt-4">
-              <div class="col-xl-12 col-xxl-12 fs-2 fw-bold">Statistik</div>
-              <div>
-                <form action="">
-                  <input
-                    type="text"
-                    placeholder="Start Date"
-                    style="width: 10%"
-                  />
-                  -
-                  <input
-                    type="text"
-                    placeholder="End Date"
-                    style="width: 10%"
-                  />
-                </form>
-                <canvas id="barchart"></canvas>
+              <div class="col px-4 dashboard-stat-box">
+                <div class="d-flex justify-content-between">
+                  <h2 class="dashboard fw-bold py-3">Statistik</h2>
+                  <div class="py-3">
+                    <form action="">
+                      <input
+                        type="date"
+                        placeholder="Start Date"
+                        class="dashboard-input-date"
+                      />
+                      -
+                      <input
+                        type="date"
+                        placeholder="End Date"
+                        class="dashboard-input-date"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <canvas id="barchart" class="mt-3"></canvas>
               </div>
             </div>
           </div>
@@ -325,13 +336,13 @@
           borderRadius: 5,
           title: {
             display: true,
-            text: '',
+            textdate: '',
           },
         },
       })
     </script>
     <script>
-      flatpickr('input[type=text]', {})
+      flatpickr('input[type=date]', {})
     </script>
     <!-- End Script -->
   </body>
