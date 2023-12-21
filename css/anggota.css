@@ -70,6 +70,19 @@ label {
   color: white;
 }
 
+.btn-tutup {
+  font-size: 3vw;
+  width: 25vw;
+  background-color: #4cb6f3;
+  color: white;
+}
+
+.anggota-detail-sub-judul-menu {
+  height: 5vh;
+  font-size: 2.3vw;
+  background-color: #cde3e6;
+}
+
 @media (min-width: 576px) {
   .table-responsive.anggota > table {
     font-size: 1.6vw;
@@ -77,6 +90,15 @@ label {
 
   .anggota-action-btn {
     width: 3vw;
+  }
+
+  .anggota-detail-sub-judul-menu {
+    height: 6vh;
+    font-size: 2vw;
+  }
+
+  .btn-tutup {
+    font-size: 3vw;
   }
 }
 
@@ -89,8 +111,18 @@ label {
     width: 2.6vw;
   }
 
+  .anggota-detail-sub-judul-menu {
+    height: 6vh;
+    font-size: 1.8vw;
+  }
+
   label {
     font-size: 1.1vw;
+  }
+
+  .btn-tutup {
+    width: 17vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -101,5 +133,14 @@ label {
 
   .anggota-action-btn {
     width: 2.9vw;
+  }
+
+  .anggota-detail-sub-judul-menu {
+    font-size: 1.3vw;
+  }
+
+  .btn-tutup {
+    width: 15vw;
+    font-size: 1.7vw;
   }
 }
