@@ -1,38 +1,54 @@
-.table-bordered-1 {
+.table-border-bottom {
   th,
   td {
     border-bottom: 1.5px solid gray;
   }
 }
 
+.notifikasi-table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.notifikasi-table tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.notifikasi-table th[scope='row'] {
+  font-weight: bold;
+}
+
+.notifikasi-table th[scope='row date'] {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+.notifikasi-table tr > th {
+  font-weight: 800;
+}
+
 .btn-tutup {
+  font-size: 3vw;
+  width: 25vw;
   background-color: #4cb6f3;
   color: white;
 }
 
-tr:nth-child(odd) {
-  background-color: white;
+@media (min-width: 576px) {
+  .btn-tutup {
+    font-size: 3vw;
+  }
 }
 
-tr:nth-child(even) {
-  background-color: #fbfbfb;
+@media (min-width: 768px) {
+  .btn-tutup {
+    width: 17vw;
+    font-size: 2.5vw;
+  }
 }
 
-tr > th {
-  font-weight: 800;
-}
-
-tr > td {
-  color: black;
-}
-
-th[scope='row'] {
-  color: black;
-  font-weight: bold;
-}
-
-th[scope='row date'] {
-  color: black;
-  font-weight: bold;
-  background-color: #dedede;
+@media (min-width: 992px) {
+  .btn-tutup {
+    width: 15vw;
+    font-size: 1.7vw;
+  }
 }
