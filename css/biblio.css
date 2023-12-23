@@ -66,16 +66,19 @@ input[type='text']:focus {
 }
 
 /* Biblio Tambah */
-form.biblio-tambah label {
+form.biblio-tambah label,
+form.biblio-edit label {
   color: #555555;
   margin-top: 2vh;
 }
 
-form.biblio-tambah label.form-check-label {
+form.biblio-tambah label.form-check-label,
+form.biblio-edit label.form-check-label {
   margin-top: 0;
 }
 
-form.biblio-tambah textarea {
+form.biblio-tambah textarea,
+form.biblio-edit textarea {
   min-height: 100px !important;
 }
 
@@ -132,10 +135,6 @@ form.biblio-tambah textarea {
 
   .biblio-action-btn {
     width: 2.6vw;
-  }
-
-  label {
-    font-size: 1.1vw;
   }
 
   .biblio-btn-tutup {
