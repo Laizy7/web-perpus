@@ -1,7 +1,20 @@
+/* Global */
 .min-vh-70 {
   min-height: 70vh !important;
 }
 
+.table-border-bottom {
+  th,
+  td {
+    border-bottom: 1.5px solid gray !important;
+  }
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+/* Anggota */
 .anggota-form-search {
   width: 20vw !important;
   min-width: 18rem !important;
@@ -29,47 +42,46 @@
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-.tambah-anggota-box {
+.anggota-tambah-anggota-box {
   background-color: #00b290;
   color: white;
   border-radius: 1.5rem;
   width: 12rem;
 }
 
-input[type='text']:focus {
-  outline: none;
-}
-
 .table-responsive.anggota > table {
   font-size: 2vw;
-}
-
-.table-border-bottom {
-  th,
-  td {
-    border-bottom: 1.5px solid gray !important;
-  }
 }
 
 .anggota-action-btn {
   width: 5vw;
 }
 
-label {
+/* Anggota Tambah */
+form.anggota-tambah label,
+form.anggota-edit label {
   color: #555555;
-  font-size: 2vw;
   margin-top: 2vh;
 }
 
-.form-check-label {
+form.anggota-tambah label.form-check-label,
+form.anggota-edit label.form-check-label {
   margin-top: 0;
 }
 
-.btn-simpan {
-  background-color: #4cb6f3;
-  color: white;
+.anggota-btn-batal {
+  background-color: #9b9b9b;
+  color: black;
+  font-weight: 600;
 }
 
+.anggota-btn-simpan {
+  background-color: #4cb6f3;
+  color: white;
+  font-weight: 600;
+}
+
+/* Anggota Detail */
 .btn-tutup {
   font-size: 3vw;
   width: 25vw;
@@ -77,10 +89,10 @@ label {
   color: white;
 }
 
-.anggota-detail-sub-judul-menu {
-  height: 5vh;
-  font-size: 2.3vw;
+h4.anggota-detail {
   background-color: #cde3e6;
+  height: 4vh;
+  font-size: 2.3vw;
 }
 
 @media (min-width: 576px) {
@@ -92,7 +104,7 @@ label {
     width: 3vw;
   }
 
-  .anggota-detail-sub-judul-menu {
+  h4.anggota-detail {
     height: 6vh;
     font-size: 2vw;
   }
@@ -111,13 +123,9 @@ label {
     width: 2.6vw;
   }
 
-  .anggota-detail-sub-judul-menu {
+  h4.anggota-detail {
     height: 6vh;
     font-size: 1.8vw;
-  }
-
-  label {
-    font-size: 1.1vw;
   }
 
   .btn-tutup {
@@ -135,8 +143,8 @@ label {
     width: 2.9vw;
   }
 
-  .anggota-detail-sub-judul-menu {
-    font-size: 1.3vw;
+  h4.anggota-detail {
+    font-size: 1.5vw;
   }
 
   .btn-tutup {
