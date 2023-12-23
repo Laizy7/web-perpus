@@ -64,6 +64,8 @@ input[type='text']:focus {
 }
 
 .btn-tutup {
+  font-size: 3vw;
+  width: 25vw;
   background-color: #4cb6f3;
   color: white;
 }
@@ -97,9 +99,21 @@ textarea {
   min-height: 100px !important;
 }
 
+.biblio-detail-table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.biblio-detail-table tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
 @media (min-width: 576px) {
   .biblio-action-btn {
     width: 3vw;
+  }
+
+  .btn-tutup {
+    font-size: 3vw;
   }
 }
 
@@ -131,6 +145,11 @@ textarea {
   .sub-judul-aksi {
     font-size: 1.3vw;
   }
+
+  .btn-tutup {
+    width: 17vw;
+    font-size: 2.5vw;
+  }
 }
 
 @media (min-width: 992px) {
@@ -144,5 +163,10 @@ textarea {
 
   .biblio-action-btn {
     width: 2.9vw;
+  }
+
+  .btn-tutup {
+    width: 15vw;
+    font-size: 1.7vw;
   }
 }
