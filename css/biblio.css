@@ -1,26 +1,39 @@
+/* Global */
 .min-vh-70 {
   min-height: 70vh !important;
 }
 
-.bib-form-search {
+.table-border-bottom {
+  th,
+  td {
+    border-bottom: 1.5px solid gray !important;
+  }
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+/* Biblio */
+.biblio-form-search {
   width: 20vw !important;
   min-width: 18rem !important;
 }
 
-.bib-search-icon-box {
+.biblio-search-icon-box {
   border: 1px solid #387df5;
   border-right: 0;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.bib-form-pencarian {
+.biblio-form-pencarian {
   border: 1px solid #387df5;
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.3rem 0.85rem;
 }
 
-.bib-btn-cari {
+.biblio-btn-cari {
   background-color: #387df5;
   color: white;
   border: 1px solid transparent;
@@ -29,22 +42,11 @@
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-.tambah-buku-box {
+.biblio-tambah-buku-box {
   background-color: #00b290;
   color: white;
   border-radius: 1.5rem;
   width: 12rem;
-}
-
-input[type='text']:focus {
-  outline: none;
-}
-
-.table-border-bottom {
-  th,
-  td {
-    border-bottom: 1.5px solid gray !important;
-  }
 }
 
 .biblio-table tr th {
@@ -63,42 +65,33 @@ input[type='text']:focus {
   width: 4vw;
 }
 
-.btn-tutup {
-  font-size: 3vw;
-  width: 25vw;
-  background-color: #4cb6f3;
-  color: white;
-}
-
-.btn-simpan {
-  background-color: #4cb6f3;
-  color: white;
-}
-
-.judul-aksi {
-  font-size: 2.5vw;
-  font-weight: 600;
-}
-
-.sub-judul-aksi {
-  font-size: 2.2vw;
-  font-weight: 600;
-}
-
-label {
+/* Biblio Tambah */
+form.biblio-tambah label {
   color: #555555;
-  font-size: 2vw;
   margin-top: 2vh;
 }
 
-.form-check-label {
+form.biblio-tambah label.form-check-label {
   margin-top: 0;
 }
 
-textarea {
+form.biblio-tambah textarea {
   min-height: 100px !important;
 }
 
+.biblio-btn-batal {
+  background-color: #9b9b9b;
+  color: black;
+  font-weight: 600;
+}
+
+.biblio-btn-simpan {
+  background-color: #4cb6f3;
+  color: white;
+  font-weight: 600;
+}
+
+/* Biblio Detail */
 .biblio-detail-table tr:nth-child(odd) {
   background-color: white;
 }
@@ -107,12 +100,19 @@ textarea {
   background-color: #fbfbfb;
 }
 
+.biblio-btn-tutup {
+  font-size: 3vw;
+  width: 25vw;
+  background-color: #4cb6f3;
+  color: white;
+}
+
 @media (min-width: 576px) {
   .biblio-action-btn {
     width: 3vw;
   }
 
-  .btn-tutup {
+  .biblio-btn-tutup {
     font-size: 3vw;
   }
 }
@@ -138,15 +138,7 @@ textarea {
     font-size: 1.1vw;
   }
 
-  .judul-aksi {
-    font-size: 1.7vw;
-  }
-
-  .sub-judul-aksi {
-    font-size: 1.3vw;
-  }
-
-  .btn-tutup {
+  .biblio-btn-tutup {
     width: 17vw;
     font-size: 2.5vw;
   }
@@ -165,7 +157,7 @@ textarea {
     width: 2.9vw;
   }
 
-  .btn-tutup {
+  .biblio-btn-tutup {
     width: 15vw;
     font-size: 1.7vw;
   }
