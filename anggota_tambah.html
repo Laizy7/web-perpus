@@ -185,19 +185,15 @@
         <main class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col px-0">
-                <h1 class="h1"><strong>Anggota</strong></h1>
-              </div>
-            </div>
+              <h1 class="anggota fw-bold mb-3 px-0">Anggota</h1>
 
-            <div class="row min-vh-70 bg-white mt-4">
-              <div class="col mb-3 p-0">
-                <div class="py-3 d-flex shadow-lg px-4 fs-4 fw-bold">
+              <div class="col min-vh-70 bg-white mb-3 p-0">
+                <h3 class="anggota fw-bold px-3 px-md-4 py-2 shadow-lg">
                   Tambah Anggota
-                </div>
+                </h3>
 
-                <form action="" class="px-4">
-                  <div class="row mt-3">
+                <form action="" class="anggota-tambah px-4">
+                  <div class="row mt-2">
                     <div class="col-md-6 mb-md-2">
                       <label for="">ID Anggota</label>
                       <input type="text" class="form-control" name="" />
@@ -270,7 +266,9 @@
                   <div class="row mt-3">
                     <div class="col-md-6">
                       <a href="" class="d-flex">
-                        <button class="btn btn-dark w-50 mx-auto me-md-0">
+                        <button
+                          class="btn anggota-btn-batal w-50 mx-auto me-md-0"
+                        >
                           Batal
                         </button>
                       </a>
@@ -278,7 +276,7 @@
                     <div
                       class="col-md-6 mt-3 mt-md-0 text-center text-md-start"
                     >
-                      <button type="submit" class="btn btn-simpan w-50">
+                      <button type="submit" class="btn anggota-btn-simpan w-50">
                         Simpan
                       </button>
                     </div>
