@@ -185,18 +185,16 @@
         <main class="content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col px-0">
-                <h1 class="h1"><strong>Riwayat Peminjaman</strong></h1>
-              </div>
-            </div>
+              <h1 class="ri-pe fw-bold mb-3 px-0">Riwayat Peminjaman</h1>
 
-            <div class="row min-vh-70 bg-white mt-4">
-              <div class="col mb-3 p-0">
-                <div class="py-4 d-flex shadow-lg px-4">
+              <div class="col min-vh-70 bg-white mb-3 p-0">
+                <div
+                  class="py-4 d-flex shadow-lg px-4"
+                  style="max-height: 79.92px"
+                >
                   <form action="" class="d-flex ri-pe-form-search">
                     <div
                       class="ri-pe-search-icon-box bg-white h-100 d-flex justify-content-center align-items-center"
-                      style="width: 10%"
                     >
                       <img src="img/icons/search.svg" alt="" class="" />
                     </div>
@@ -204,15 +202,8 @@
                       type="text"
                       class="ri-pe-form-pencarian"
                       placeholder="Pencarian data"
-                      style="width: 70%"
                     />
-                    <button
-                      class="ri-pe-btn-cari"
-                      type="submit"
-                      style="width: 20%"
-                    >
-                      Cari
-                    </button>
+                    <button class="ri-pe-btn-cari" type="submit">Cari</button>
                   </form>
 
                   <form action="" class="ri-pe-form-date ms-auto">
@@ -221,7 +212,7 @@
                       placeholder="Start Date"
                       class="ri-pe-date text-center h-100"
                     />
-                    -
+                    <span>-</span>
                     <input
                       type="date"
                       placeholder="End Date"
@@ -230,15 +221,17 @@
                   </form>
                 </div>
 
-                <div class="table-responsive px-4 ri-pe">
-                  <table class="table text-black table-border-bottom">
+                <div class="table-responsive px-3 px-sm-4">
+                  <table
+                    class="table ri-pe-table text-black table-border-bottom"
+                  >
                     <thead>
                       <tr>
                         <th scope="col">No</th>
                         <th scope="col">Peminjaman</th>
-                        <th scope="col">Tanggal Pinjam</th>
-                        <th scope="col">Jatuh Tempo</th>
-                        <th scope="col">Jumlah Buku</th>
+                        <th scope="col tanggal-pinjam">Tanggal Pinjam</th>
+                        <th scope="col jatuh-tempo">Jatuh Tempo</th>
+                        <th scope="col jumlah-buku">Jumlah Buku</th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
