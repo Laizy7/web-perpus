@@ -16,7 +16,7 @@ input[type='text']:focus {
 
 /* Anggota */
 .anggota-form-search {
-  width: 20vw !important;
+  width: 25vw !important;
   min-width: 18rem !important;
 }
 
@@ -24,6 +24,7 @@ input[type='text']:focus {
   border: 1px solid #387df5;
   border-right: 0;
   border-radius: 0.5rem 0 0 0.5rem;
+  width: 15%;
 }
 
 .anggota-form-pencarian {
@@ -31,6 +32,7 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.3rem 0.85rem;
+  width: 65%;
 }
 
 .anggota-btn-cari {
@@ -40,6 +42,7 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: 0 0.5rem 0.5rem 0;
+  width: 20%;
 }
 
 .anggota-tambah-anggota-box {
@@ -49,8 +52,12 @@ input[type='text']:focus {
   width: 12rem;
 }
 
-.table-responsive.anggota > table {
-  font-size: 2vw;
+.anggota-table tr th {
+  font-size: 1.9vw;
+}
+
+.anggota-table tr td {
+  font-size: 1.7vw;
 }
 
 .anggota-action-btn {
@@ -96,10 +103,6 @@ h4.anggota-detail {
 }
 
 @media (min-width: 576px) {
-  .table-responsive.anggota > table {
-    font-size: 1.6vw;
-  }
-
   .anggota-action-btn {
     width: 3vw;
   }
@@ -115,8 +118,12 @@ h4.anggota-detail {
 }
 
 @media (min-width: 768px) {
-  .table-responsive.anggota > table {
-    font-size: 1.4vw;
+  .anggota-table tr th {
+    font-size: 1.5vw;
+  }
+
+  .anggota-table tr td {
+    font-size: 1.3vw;
   }
 
   .anggota-action-btn {
@@ -135,8 +142,12 @@ h4.anggota-detail {
 }
 
 @media (min-width: 992px) {
-  .table-responsive.anggota > table {
+  .anggota-table tr th {
     font-size: 1.3vw;
+  }
+
+  .anggota-table tr td {
+    font-size: 1.1vw;
   }
 
   .anggota-action-btn {

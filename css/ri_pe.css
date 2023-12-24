@@ -1,45 +1,6 @@
+/* Global */
 .min-vh-70 {
   min-height: 70vh !important;
-}
-
-.ri-pe-form-search {
-  width: 20vw !important;
-  min-width: 18rem !important;
-}
-
-.ri-pe-search-icon-box {
-  border: 1px solid #387df5;
-  border-right: 0;
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.ri-pe-form-pencarian {
-  border: 1px solid #387df5;
-  font-size: 0.875rem;
-  font-weight: 400;
-  padding: 0.3rem 0.85rem;
-}
-
-.ri-pe-btn-cari {
-  background-color: #387df5;
-  color: white;
-  border: 1px solid transparent;
-  font-size: 0.875rem;
-  font-weight: 600;
-  border-radius: 0 0.5rem 0.5rem 0;
-}
-
-.ri-pe-date {
-  min-width: 110px;
-  max-width: 9vw;
-}
-
-input[type='text']:focus {
-  outline: none;
-}
-
-.table-responsive.ri-pe > table {
-  font-size: 2vw;
 }
 
 .table-border-bottom {
@@ -49,13 +10,69 @@ input[type='text']:focus {
   }
 }
 
+input[type='text']:focus {
+  outline: none;
+}
+
+/* Ri - Pe  */
+.ri-pe-form-search {
+  width: 25vw !important;
+  min-width: 18rem !important;
+}
+
+.ri-pe-search-icon-box {
+  border: 1px solid #387df5;
+  border-right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
+  width: 15%;
+}
+
+.ri-pe-form-pencarian {
+  border: 1px solid #387df5;
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.3rem 0.85rem;
+  width: 65%;
+}
+
+.ri-pe-btn-cari {
+  background-color: #387df5;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 20%;
+}
+
+.ri-pe-date {
+  min-width: 110px;
+  max-width: 9vw;
+}
+
+.ri-pe-table tr th {
+  font-size: 1.9vw;
+}
+
+.ri-pe-table tr td {
+  font-size: 1.7vw;
+}
+
 .ri-pe-action-btn {
   width: 5vw;
 }
 
 @media (min-width: 576px) {
-  .table-responsive.ri-pe > table {
-    font-size: 1.6vw;
+  .ri-pe-table th[scope='col tanggal-pinjam'] {
+    width: 22%;
+  }
+
+  .ri-pe-table th[scope='col jatuh-tempo'] {
+    width: 20%;
+  }
+
+  .ri-pe-table th[scope='col jumlah-buku'] {
+    width: 20%;
   }
 
   .ri-pe-action-btn {
@@ -64,8 +81,24 @@ input[type='text']:focus {
 }
 
 @media (min-width: 768px) {
-  .table-responsive.ri-pe > table {
-    font-size: 1.4vw;
+  .ri-pe-table tr th {
+    font-size: 1.5vw;
+  }
+
+  .ri-pe-table tr td {
+    font-size: 1.3vw;
+  }
+
+  .ri-pe-table th[scope='col tanggal-pinjam'] {
+    width: 18%;
+  }
+
+  .ri-pe-table th[scope='col jatuh-tempo'] {
+    width: 16%;
+  }
+
+  .ri-pe-table th[scope='col jumlah-buku'] {
+    width: 16%;
   }
 
   .ri-pe-action-btn {
@@ -74,8 +107,12 @@ input[type='text']:focus {
 }
 
 @media (min-width: 992px) {
-  .table-responsive.ri-pe > table {
+  .ri-pe-table tr th {
     font-size: 1.3vw;
+  }
+
+  .ri-pe-table tr td {
+    font-size: 1.1vw;
   }
 
   .ri-pe-action-btn {
