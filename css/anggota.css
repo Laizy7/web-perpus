@@ -60,7 +60,7 @@ input[type='text']:focus {
   font-size: 1.7vw;
 }
 
-.anggota-action-btn {
+.anggota-btn-aksi {
   width: 5vw;
 }
 
@@ -103,7 +103,7 @@ h4.anggota-detail {
 }
 
 @media (min-width: 576px) {
-  .anggota-action-btn {
+  .anggota-btn-aksi {
     width: 3vw;
   }
 
@@ -126,7 +126,7 @@ h4.anggota-detail {
     font-size: 1.3vw;
   }
 
-  .anggota-action-btn {
+  .anggota-btn-aksi {
     width: 2.6vw;
   }
 
@@ -150,7 +150,7 @@ h4.anggota-detail {
     font-size: 1.1vw;
   }
 
-  .anggota-action-btn {
+  .anggota-btn-aksi {
     width: 2.9vw;
   }
 

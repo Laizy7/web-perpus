@@ -58,7 +58,7 @@ input[type='text']:focus {
   font-size: 1.7vw;
 }
 
-.ri-pe-action-btn {
+.ri-pe-btn-aksi {
   width: 5vw;
 }
 
@@ -75,7 +75,7 @@ input[type='text']:focus {
     width: 20%;
   }
 
-  .ri-pe-action-btn {
+  .ri-pe-btn-aksi {
     width: 3vw;
   }
 }
@@ -101,7 +101,7 @@ input[type='text']:focus {
     width: 16%;
   }
 
-  .ri-pe-action-btn {
+  .ri-pe-btn-aksi {
     width: 2.6vw;
   }
 }
@@ -115,7 +115,7 @@ input[type='text']:focus {
     font-size: 1.1vw;
   }
 
-  .ri-pe-action-btn {
+  .ri-pe-btn-aksi {
     width: 2.9vw;
   }
 }
