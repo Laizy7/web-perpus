@@ -23,7 +23,8 @@ input[type='text']:focus {
   border: 1px solid #387df5;
   border-right: 0;
   border-radius: 0.5rem 0 0 0.5rem;
-  width: 15%;
+  width: 10%;
+  min-width: 34px;
   min-height: 31.92px;
 }
 
@@ -32,7 +33,7 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.3rem 0.85rem;
-  width: 65%;
+  width: 75%;
 }
 
 .biblio-btn-cari {
@@ -42,7 +43,8 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: 0 0.5rem 0.5rem 0;
-  width: 20%;
+  width: 15%;
+  min-width: 55px;
 }
 
 .biblio-tambah-buku-box {
@@ -115,6 +117,20 @@ form.biblio-edit textarea {
 }
 
 @media (min-width: 576px) {
+  .biblio-search-icon-box {
+    width: 15%;
+    max-width: 45px !important;
+  }
+
+  .biblio-form-pencarian {
+    width: 65%;
+  }
+
+  .biblio-btn-cari {
+    width: 20%;
+    max-width: 60px !important;
+  }
+
   .biblio-form-search {
     width: 60% !important;
   }
@@ -141,6 +157,18 @@ form.biblio-edit textarea {
 }
 
 @media (min-width: 768px) {
+  .biblio-search-icon-box {
+    width: 10%;
+  }
+
+  .biblio-form-pencarian {
+    width: 75%;
+  }
+
+  .biblio-btn-cari {
+    width: 15%;
+  }
+
   .biblio-table tr th {
     font-size: 1.5vw;
   }
@@ -164,6 +192,20 @@ form.biblio-edit textarea {
 }
 
 @media (min-width: 992px) {
+  .biblio-search-icon-box {
+    width: 10%;
+    max-width: 40px !important;
+  }
+
+  .biblio-form-pencarian {
+    width: 75%;
+  }
+
+  .biblio-btn-cari {
+    width: 15%;
+    max-width: 56px !important;
+  }
+
   .biblio-table tr th {
     font-size: 1.3vw;
   }
