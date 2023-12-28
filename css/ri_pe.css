@@ -16,15 +16,17 @@ input[type='text']:focus {
 
 /* Ri - Pe  */
 .ri-pe-form-search {
-  width: 25vw !important;
-  min-width: 18rem !important;
+  width: 100% !important;
+  max-height: 31.92px;
 }
 
 .ri-pe-search-icon-box {
   border: 1px solid #387df5;
   border-right: 0;
   border-radius: 0.5rem 0 0 0.5rem;
-  width: 15%;
+  width: 10%;
+  min-width: 34px;
+  min-height: 31.92px;
 }
 
 .ri-pe-form-pencarian {
@@ -32,7 +34,7 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 400;
   padding: 0.3rem 0.85rem;
-  width: 65%;
+  width: 75%;
 }
 
 .ri-pe-btn-cari {
@@ -42,12 +44,19 @@ input[type='text']:focus {
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: 0 0.5rem 0.5rem 0;
-  width: 20%;
+  width: 15%;
+  min-width: 55px;
+}
+
+.ri-pe-form-date {
+  width: fit-content;
 }
 
 .ri-pe-date {
-  min-width: 110px;
+  min-width: 90px;
   max-width: 9vw;
+  min-height: 31.92px;
+  max-height: 31.92px;
 }
 
 .ri-pe-table tr th {
@@ -63,6 +72,24 @@ input[type='text']:focus {
 }
 
 @media (min-width: 576px) {
+  .ri-pe-search-icon-box {
+    width: 15%;
+    max-width: 45px !important;
+  }
+
+  .ri-pe-form-pencarian {
+    width: 65%;
+  }
+
+  .ri-pe-btn-cari {
+    width: 20%;
+    max-width: 60px !important;
+  }
+
+  .ri-pe-form-search {
+    width: 60% !important;
+  }
+
   .ri-pe-table th[scope='col tanggal-pinjam'] {
     width: 22%;
   }
@@ -81,6 +108,22 @@ input[type='text']:focus {
 }
 
 @media (min-width: 768px) {
+  .ri-pe-form-search {
+    width: 50% !important;
+  }
+
+  .ri-pe-search-icon-box {
+    width: 10%;
+  }
+
+  .ri-pe-form-pencarian {
+    width: 75%;
+  }
+
+  .ri-pe-btn-cari {
+    width: 15%;
+  }
+
   .ri-pe-table tr th {
     font-size: 1.5vw;
   }
@@ -107,6 +150,20 @@ input[type='text']:focus {
 }
 
 @media (min-width: 992px) {
+  .ri-pe-search-icon-box {
+    width: 10%;
+    max-width: 40px !important;
+  }
+
+  .ri-pe-form-pencarian {
+    width: 75%;
+  }
+
+  .ri-pe-btn-cari {
+    width: 15%;
+    max-width: 56px !important;
+  }
+
   .ri-pe-table tr th {
     font-size: 1.3vw;
   }
