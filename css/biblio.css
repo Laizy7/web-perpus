@@ -16,8 +16,7 @@ input[type='text']:focus {
 
 /* Biblio */
 .biblio-form-search {
-  width: 25vw !important;
-  min-width: 18rem !important;
+  width: 100% !important;
 }
 
 .biblio-search-icon-box {
@@ -25,6 +24,7 @@ input[type='text']:focus {
   border-right: 0;
   border-radius: 0.5rem 0 0 0.5rem;
   width: 15%;
+  min-height: 31.92px;
 }
 
 .biblio-form-pencarian {
@@ -49,23 +49,24 @@ input[type='text']:focus {
   background-color: #00b290;
   color: white;
   border-radius: 1.5rem;
-  width: 12rem;
+  width: 10rem;
+  min-height: 31.92px;
 }
 
 .biblio-table tr th {
-  font-size: 1.9vw;
+  font-size: 2.3vw;
 }
 
 .biblio-table tr td {
-  font-size: 1.7vw;
+  font-size: 2.1vw;
 }
 
-.biblio-table th[scope='tahun-terbit'] {
+.biblio-table th[scope='col tahun-terbit'] {
   width: 21%;
 }
 
-.biblio-action-btn {
-  width: 4vw;
+.biblio-btn-aksi {
+  width: 5vw;
 }
 
 /* Biblio Tambah */
@@ -114,8 +115,24 @@ form.biblio-edit textarea {
 }
 
 @media (min-width: 576px) {
-  .biblio-action-btn {
-    width: 3vw;
+  .biblio-form-search {
+    width: 60% !important;
+  }
+
+  .biblio-tambah-buku-box {
+    max-width: 12rem !important;
+  }
+
+  .biblio-table tr th {
+    font-size: 1.8vw;
+  }
+
+  .biblio-table tr td {
+    font-size: 1.5vw;
+  }
+
+  .biblio-btn-aksi {
+    width: 4vw;
   }
 
   .biblio-btn-tutup {
@@ -132,11 +149,11 @@ form.biblio-edit textarea {
     font-size: 1.3vw;
   }
 
-  .biblio-table th[scope='tahun-terbit'] {
+  .biblio-table th[scope='col tahun-terbit'] {
     width: 19%;
   }
 
-  .biblio-action-btn {
+  .biblio-btn-aksi {
     width: 2.6vw;
   }
 
@@ -155,7 +172,7 @@ form.biblio-edit textarea {
     font-size: 1.1vw;
   }
 
-  .biblio-action-btn {
+  .biblio-btn-aksi {
     width: 2.9vw;
   }
 
