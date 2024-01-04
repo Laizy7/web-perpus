@@ -193,56 +193,84 @@
                     class="table text-black notifikasi-table table-border-bottom"
                   >
                     <tr>
-                      <th scope="row date">10 November 2023</th>
-                      <th scope="row date"></th>
+                      <th colspan="2" scope="row date">10 November 2023</th>
                     </tr>
                     <tr>
-                      <th scope="row">Yuriko Aishinselo</th>
-                      <td>
-                        Pengenalan Dasar-Dasar PLC (Programable Logic Controler)
-                        Disertai Contoh Aplikasinya
-                      </td>
+                      <th scope="row data">Yuriko Aishinselo</th>
+                      <td>Pengenalan Dasar-Dasar PLC</td>
                     </tr>
                     <tr>
-                      <th scope="row">Tommy</th>
+                      <th scope="row data">Tommy</th>
                       <td>Buku Pintar Belajar Grafis</td>
                     </tr>
                     <tr>
-                      <th scope="row">Felim</th>
-                      <td>Otodidak Desain dan Pemrograman Website</td>
-                    </tr>
-                    <tr>
-                      <th scope="row date">13 November 2023</th>
-                      <th scope="row date"></th>
-                    </tr>
-                    <tr class="">
-                      <th scope="row">Yuriko Aishinselo</th>
-                      <td>
-                        Pengenalan Dasar-Dasar PLC (Programable Logic Controler)
-                        Disertai Contoh Aplikasinya
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Tommy</th>
-                      <td>Buku Pintar Belajar Grafis</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Felim</th>
+                      <th scope="row data">Felim</th>
                       <td>Otodidak Desain dan Pemrograman Website</td>
                     </tr>
                   </table>
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col text-center">
-                  <a href="" class="btn btn-tutup fw-bold">Tutup</a>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <a href="" class="btn btn-tutup fw-bold">Tutup</a>
               </div>
             </div>
           </div>
         </main>
         <!-- End Content -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="notif-modal"
+          tabindex="-1"
+          aria-labelledby="modal-detail-informasi-label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3
+                  class="modal-title fw-bold"
+                  id="modal-detail-informasi-label"
+                >
+                  Detail Informasi
+                </h3>
+              </div>
+              <div class="modal-body">
+                <div class="table-responsive">
+                  <table
+                    class="table text-black detail-informasi-table table-border-bottom"
+                  >
+                    <tr>
+                      <th scope="row detail-informasi">Nama</th>
+                      <td>: Yuriko Aishinselo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row detail-informasi">NIM</th>
+                      <td>: 2020123209</td>
+                    </tr>
+                    <tr>
+                      <th scope="row detail-informasi">Program Studi</th>
+                      <td>: TPL</td>
+                    </tr>
+                    <tr>
+                      <th scope="row detail-informasi">Judul Buku</th>
+                      <td>: Programmer</td>
+                    </tr>
+                    <tr>
+                      <th scope="row detail-informasi">Pengarang</th>
+                      <td>: Sandonna</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="" class="btn btn-tutup fw-bold">Tutup</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -250,6 +278,29 @@
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const myModal = new bootstrap.Modal('#notif-modal', {
+        keyboard: true,
+      })
+
+      document
+        .querySelectorAll('table th[scope="row data"], table td')
+        .forEach((row) => {
+          row.addEventListener('click', (event) => {
+            event.stopPropagation()
+            myModal.show()
+          })
+        })
+
+      document.addEventListener('click', (event) => {
+        const target = event.target
+
+        if (target.closest('.modal') !== myModal.element) {
+          event.preventDefault()
+          myModal.hide()
+        }
+      })
+    </script>
     <!-- End Script -->
   </body>
 </html>
