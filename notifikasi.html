@@ -266,7 +266,9 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <a href="" class="btn btn-tutup fw-bold">Tutup</a>
+                <button class="btn btn-tutup fw-bold" data-bs-dismiss="modal">
+                  Tutup
+                </button>
               </div>
             </div>
           </div>
@@ -291,15 +293,6 @@
             myModal.show()
           })
         })
-
-      document.addEventListener('click', (event) => {
-        const target = event.target
-
-        if (target.closest('.modal') !== myModal.element) {
-          event.preventDefault()
-          myModal.hide()
-        }
-      })
     </script>
     <!-- End Script -->
   </body>
