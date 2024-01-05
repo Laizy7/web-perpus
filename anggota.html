@@ -242,13 +242,16 @@
                                 class="anggota-btn-aksi"
                               />
                             </a>
-                            <a href="" class="d-inline-block pt-1 pt-md-0">
+                            <div
+                              href=""
+                              class="d-inline-block pt-1 pt-md-0 hapus-anggota"
+                            >
                               <img
                                 src="img/icons/delete.svg"
                                 alt=""
                                 class="anggota-btn-aksi"
                               />
-                            </a>
+                            </div>
                           </div>
                         </td>
                       </tr>
@@ -260,6 +263,29 @@
           </div>
         </main>
         <!-- End Content -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="alert-hapus-anggota"
+          tabindex="-1"
+          aria-labelledby="modal-detail-informasi-label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/icons/confirmation.svg" class="border" alt="" />
+                <div>Apakah Anda yakin ingin menghapus anggota Yuriko?</div>
+                <div>
+                  <button class="btn btn-konfirmasi-batal">Batal</button>
+                  <button class="btn btn-konfirmasi-hapus" type="submit">
+                    Hapus
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -267,6 +293,18 @@
     <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const alertHapusAnggota = new bootstrap.Modal('#alert-hapus-anggota', {
+        keyboard: true,
+      })
+
+      document.querySelectorAll('.hapus-anggota').forEach((row) => {
+        row.addEventListener('click', (event) => {
+          event.stopPropagation()
+          alertHapusAnggota.show()
+        })
+      })
+    </script>
     <!-- End Script -->
   </body>
 </html>
