@@ -105,6 +105,61 @@ h4.anggota-detail {
   font-size: 2.3vw;
 }
 
+/* Anggota Alert */
+.anggota-img-konfirmasi-box {
+  width: 30%;
+  height: 15vh;
+}
+
+.anggota-img-konfirmasi {
+  width: 100%;
+  height: 100%;
+}
+
+.anggota-btn-konfirmasi-box {
+  width: 70%;
+}
+
+.anggota-text-konfirmasi {
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.btn-konfirmasi-batal {
+  width: 18vw;
+  color: black;
+  background-color: white;
+  font-size: 2vw;
+  font-weight: 600;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.btn-konfirmasi-hapus {
+  width: 18vw;
+  color: white;
+  background-color: #e82424;
+  font-size: 2vw;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.anggota-img-dihapus-box {
+  width: 30%;
+  height: 15vh;
+}
+
+.anggota-img-dihapus {
+  width: 100%;
+  height: 100%;
+}
+
+.anggota-text-dihapus {
+  width: 70%;
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+
 @media (min-width: 576px) {
   .anggota-search-icon-box {
     width: 15%;
@@ -148,6 +203,10 @@ h4.anggota-detail {
   .btn-tutup {
     font-size: 3vw;
   }
+
+  .anggota-text-dihapus {
+    font-size: 2.8vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -183,6 +242,28 @@ h4.anggota-detail {
   .btn-tutup {
     width: 17vw;
     font-size: 2.5vw;
+  }
+
+  .anggota-img-konfirmasi-box {
+    height: 25vh;
+  }
+
+  .anggota-text-konfirmasi {
+    font-size: 1.4vw;
+  }
+
+  .btn-konfirmasi-batal,
+  .btn-konfirmasi-hapus {
+    width: 12vw;
+    font-size: 1.4vw;
+  }
+
+  .anggota-img-dihapus-box {
+    height: 25vh;
+  }
+
+  .anggota-text-dihapus {
+    font-size: 2.4vw;
   }
 }
 
